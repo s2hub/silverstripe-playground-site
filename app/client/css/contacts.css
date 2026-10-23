@@ -1,0 +1,42 @@
+/* Styles of the Contacts block (templates/ContactsBlock.ss) and a contact's page (templates/Layout/ContactPage.ss). */
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 1.6rem;
+    margin: 2.4rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.6rem;
+    border: 0.1rem solid var(--color-line-grey);
+    border-radius: 0.4rem;
+}
+
+.contacts__name {
+    font-weight: var(--font-weight-semibold);
+}
+
+.contacts__company {
+    color: var(--color-grey);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.8rem 2.4rem;
+}
+
+.contact dt {
+    font-weight: var(--font-weight-semibold);
+}
+
+.contact dd {
+    margin: 0;
+}

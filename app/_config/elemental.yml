@@ -1,0 +1,7 @@
+---
+Name: app-elemental
+---
+# Every page is built from content blocks (dnadesign/silverstripe-elemental).
+Page:
+  extensions:
+    - DNADesign\Elemental\Extensions\ElementalPageExtension

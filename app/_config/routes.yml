@@ -1,0 +1,8 @@
+---
+Name: app-routes
+After: '#rootroutes'
+---
+# A page for each contact: /contact/<ID> (see ContactController).
+SilverStripe\Control\Director:
+  rules:
+    'contact/$ID': ContactController
